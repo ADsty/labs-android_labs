@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ActivityFragment1">
+    <fragment
+        android:id = "@+id/ActivityFragment1"
+        android:name="com.petrov.vitaliy.lab3point5.Fragment1"
+        tools:layout="@layout/fragment1">
+        <action
+            android:id="@+id/from_first_to_second"
+            app:destination="@id/ActivityFragment2"/>
+        <action
+            android:id="@+id/from_first_to_about"
+            app:destination="@id/ActivityAbout"/>
+        <action
+            android:id="@+id/from_first_to_clear"
+            app:destination="@id/ActivityFragmentClear"/>
+    </fragment>
+    <fragment
+        android:id = "@+id/ActivityFragment2"
+        android:name="com.petrov.vitaliy.lab3point5.Fragment2"
+        tools:layout="@layout/fragment2">
+        <action
+            android:id="@+id/from_second_to_third"
+            app:destination="@id/ActivityFragment3"/>
+        <action
+            android:id="@+id/from_second_to_first"
+            app:destination="@id/ActivityFragment1"/>
+        <action
+            android:id="@+id/from_second_to_about"
+            app:destination="@id/ActivityAbout"/>
+        <action
+            android:id="@+id/from_second_to_clear"
+            app:destination="@id/ActivityFragmentClear"/>
+    </fragment>
+    <fragment
+        android:id = "@+id/ActivityFragment3"
+        android:name="com.petrov.vitaliy.lab3point5.Fragment3"
+        tools:layout="@layout/fragment3">
+        <action
+            android:id="@+id/from_third_to_second"
+            app:destination="@id/ActivityFragment2"/>
+        <action
+            android:id="@+id/from_third_to_first"
+            app:destination="@id/ActivityFragment1"/>
+        <action
+            android:id="@+id/from_third_to_about"
+            app:destination="@id/ActivityAbout"/>
+        <action
+            android:id="@+id/from_third_to_clear"
+            app:destination="@id/ActivityFragmentClear"/>
+    </fragment>
+    <fragment
+        android:id = "@+id/ActivityFragmentClear"
+        android:name="com.petrov.vitaliy.lab3point5.FragmentClear"
+        tools:layout="@layout/fragment_clear"/>
+    <activity
+        android:id = "@+id/ActivityAbout"
+        android:name="com.petrov.vitaliy.lab3point5.ActivityAbout"
+        tools:layout="@layout/activity_about"/>
+</navigation>

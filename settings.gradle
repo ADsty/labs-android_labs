@@ -1,0 +1,12 @@
+include ':lab5.2'
+include ':lab5'
+include ':biblib'
+include ':lab4'
+include ':lab3.5'
+include ':lab3.4'
+include ':lab3.3'
+include ':lab3.2'
+include ':lab2_continuewatch'
+include ':lab2'
+include ':lab1'
+rootProject.name = "labs-android"
